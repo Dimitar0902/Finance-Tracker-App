@@ -1,10 +1,12 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    background-color: black ;
   }
   
   h1, h2 {
     text-align: center;
+    color: blueviolet;
   }
   
   .input-section {
@@ -47,6 +49,7 @@ body {
     border: 1px solid #ddd;
     padding: 0.8rem;
     text-align: left;
+    color: white;
   }
   
   th {
@@ -65,4 +68,15 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  @media (max-width: 770px) {
+ .input-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1em;
+  }
   }
